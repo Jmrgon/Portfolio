@@ -1,0 +1,35 @@
+* {
+    background-color: #97E4EC; 
+}
+
+header h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    margin-left: 60px;
+    margin-top: 40px;
+    font-size: 60px;
+    color: #262833;
+}
+
+header ul {
+    list-style-type: none;
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    font-size: 36px;
+    gap: 85px;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    
+    
+}
+
+
+.hr{
+  border: none;              
+  height: 1px;               
+  background-color: #333;   
+  width: 50%;                
+  margin: 0 0 20px 50px;     
+  opacity: 0.8;  
+}
