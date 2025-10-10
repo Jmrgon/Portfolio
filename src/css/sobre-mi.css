@@ -1,4 +1,6 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+body{
     background-color: #97E4EC; 
 }
 
@@ -13,15 +15,17 @@ header h1 {
 
 header ul {
     list-style-type: none;
-    font-family: "Pixelify Sans", sans-serif;
     display: flex;
     font-size: 36px;
     gap: 85px;
     margin: 0;
     padding: 0;
     margin-left: 50px;
-    
-    
+}
+
+header ul li{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size:
 }
 
 
@@ -33,3 +37,23 @@ header ul {
   margin: 0 0 20px 50px;     
   opacity: 0.8;  
 }
+
+header article{
+    background-color: #F0F8FF;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 5%;
+    padding: 30px;
+}
+
+header article p {
+    font-family: "Roboto flex", sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    font-size: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
