@@ -1,42 +1,6 @@
 body {
-    margin: 0;
+    margin: auto;
     background-color: #97E4EC;
-}
-
-body section {
-    background-color: #eaf6fd;
-    border-radius: 40px;
-    padding: 40px 30px;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 100px;
-}
-
-body section article {
-    flex: 1;
-    text-align: center;
-}
-
-body section article h2 {
-    font-family: "pixelify sans", sans-serif;
-    font-size: 50px;
-    color: #30343f;
-    border-bottom: 2px solid #9dc3e6;
-    display: inline-block;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-body section article p {
-    font-size: 22px;
-    color: #2c2c2c;
-    line-height: 1.6;
-    margin: 15px 15px;
-    text-align: left;
 }
 
 header h1 {
@@ -105,4 +69,62 @@ footer section {
     font-family: 'pixelify sans', sans-serif;
     font-size: 20px;
     color: #202B67;
+}
+
+.formulario {
+  background-color: #b3ecf0;
+  border-radius: 40px;
+  width: 600px;
+  margin: 60px auto;
+  padding: 40px 60px; 
+  text-align: center;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: #202B67;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulario h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #202B67;
+}
+
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  background-color: #dff6f8;
+  border: none;
+  border-radius: 20px;
+  padding: 18px;
+  font-size: 18px;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: #202B67;
+  margin-bottom: 25px;
+  outline: none;
+}
+
+.formulario textarea {
+  height: 130px;
+  resize: none;
+}
+
+.formulario button {
+  background-color: #202B67;
+  color: #a8ebef;
+  font-size: 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.formulario button:hover {
+  background-color: #3142a1;
+  transform: scale(1.05);
 }

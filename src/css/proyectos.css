@@ -1,14 +1,14 @@
 body {
-    margin: 0;
+    margin: auto;
     background-color: #97E4EC;
 }
 
 body section {
-    background-color: #eaf6fd;
+    /* background-color: #eaf6fd; */
     border-radius: 40px;
     padding: 40px 30px;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +29,8 @@ body section article h2 {
     display: inline-block;
     margin-bottom: 30px;
     text-align: center;
+    position: relative;
+    top: -50px;
 }
 
 body section article p {
@@ -105,4 +107,67 @@ footer section {
     font-family: 'pixelify sans', sans-serif;
     font-size: 20px;
     color: #202B67;
+}
+
+.contenedor-recuadros {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    margin-top: 60px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.contenedor-recuadros::-webkit-scrollbar {
+    display: none;
+}
+
+
+.recuadro {
+    width: 400px;
+    height: 380px;
+    background-color: #E7F0F7;
+    border-radius: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+.recuadro:hover {
+    transform: translateY(-10px);
+}
+
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+
+figure img {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+
+figcaption {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 26px;
+    margin-top: 20px;
+    color: #202B67;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+figcaption:hover {
+    text-decoration: underline;
+    color: #0f1b80;
 }
