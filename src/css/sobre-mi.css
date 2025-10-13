@@ -23,7 +23,7 @@ body section article {
 
 body section article h2 {
     font-family: "pixelify sans", sans-serif;
-    font-size: 50px;
+    font-size: 70px;
     color: #30343f;
     border-bottom: 2px solid #9dc3e6;
     display: inline-block;
@@ -32,7 +32,7 @@ body section article h2 {
 }
 
 body section article p {
-    font-size: 22px;
+    font-size: 40px;
     color: #2c2c2c;
     line-height: 1.6;
     margin: 15px 15px;
