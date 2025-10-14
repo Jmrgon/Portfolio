@@ -55,3 +55,12 @@ footer section {
   font-size: 20px;
   color: #202B67;
 }
+
+footer .enlace-footer {
+    color: #202B67;
+    font-family: 'pixelify sans', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}

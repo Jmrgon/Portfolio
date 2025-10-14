@@ -71,6 +71,17 @@ footer section {
     color: #202B67;
 }
 
+footer .enlace-footer {
+    color: #202B67;
+    font-family: 'pixelify sans', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+
+
 .formulario {
   background-color: #b3ecf0;
   border-radius: 40px;

@@ -3,44 +3,6 @@ body {
     background-color: #97E4EC;
 }
 
-body section {
-    /* background-color: #eaf6fd; */
-    border-radius: 40px;
-    padding: 40px 30px;
-    max-width: auto;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 100px;
-}
-
-body section article {
-    flex: 1;
-    text-align: center;
-}
-
-body section article h2 {
-    font-family: "pixelify sans", sans-serif;
-    font-size: 50px;
-    color: #30343f;
-    border-bottom: 2px solid #9dc3e6;
-    display: inline-block;
-    margin-bottom: 30px;
-    text-align: center;
-    position: relative;
-    top: -50px;
-}
-
-body section article p {
-    font-size: 22px;
-    color: #2c2c2c;
-    line-height: 1.6;
-    margin: 15px 15px;
-    text-align: left;
-}
-
 header h1 {
     font-family: "Pixelify Sans", sans-serif;
     display: flex;
@@ -107,4 +69,79 @@ footer section {
     font-family: 'pixelify sans', sans-serif;
     font-size: 20px;
     color: #202B67;
+}
+
+footer .enlace-footer {
+    color: #202B67;
+    font-family: 'pixelify sans', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.recuadro-redes {
+    background-color: #e9f1f7;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recuadro-redes h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.5rem;
+    color: #2b2b2b;
+    margin-bottom: 2rem;
+}
+
+.grid-redes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.red {
+    background-color: #dfe8ef;
+    border: 2px solid #c2d7e3;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.red:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.red a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.red img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.red figcaption {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+    color: #333;
 }
