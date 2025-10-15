@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #a8ebef;
+}
+
+header h1 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 100px;
+  color: #202B67;
+  margin: 0 0 20px 0;
+}
+
+header h1 button {
+  all: unset;
+  cursor: pointer;
+  color: inherit;
+}
+
+header .hr {
+  width: 60%;
+  border: 2px solid #202B67;
+  margin: 20px 0;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a {
+  all: unset;
+  cursor: pointer;
+  color: #262833;
+  transition: color 0.3s;
+}
+
+header ul li button:hover {
+  color: #202B67;
+}
+
+
+footer {
+  background-color: #202B67;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #d0e8f5;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer section {
+  display: inline-block;
+  margin: 0 50px;
+  background-color: #a8ebef;
+  border-radius: 40px;
+  padding: 30px 60px;
+  font-family: 'pixelify sans', sans-serif;
+  font-size: 20px;
+  color: #202B67;
+}
+
+footer .enlace-footer {
+  color: #202B67;
+  font-family: 'pixelify sans', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+section.sobre-mi {
+  position: relative;
+  top: -50px;
+}

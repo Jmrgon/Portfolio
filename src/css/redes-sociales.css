@@ -30,7 +30,15 @@ header ul {
 
 }
 
-header ul li button {
+header h1 button {
+    all: unset;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+header ul li a {
     all: unset;
     cursor: pointer;
     font-family: inherit;
@@ -54,7 +62,7 @@ footer {
     text-align: center;
     padding: 30px 0;
     border-top: 1px solid #d0e8f5;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
