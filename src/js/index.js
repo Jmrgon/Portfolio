@@ -1,3 +1,8 @@
+const toggleBtn = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('header ul');
+const menuHamburguesa = document.querySelector('.menu-hamburguesa');
+
+
 document.querySelectorAll('.recuadro').forEach(recuadro => {
     recuadro.addEventListener('click', () => {
         window.location.href = 'https://github.com/Jmrgon';
@@ -8,8 +13,16 @@ document.getElementById('boton-redes').addEventListener('click', () => {
     window.location.href = 'redes-sociales.html';
 });
 
-const toggleBtn = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('header ul');
+document.getElementById('menu-toggle').addEventListener('click', () => {
+    if (menuHamburguesa.style.display === 'none' || elem.style.display === '') {
+        menuHamburguesa.style.display = 'block';
+    } else {
+        menuHamburguesa.style.display = 'none';
+        console.log
+    }
+});
+
+
 
 toggleBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
