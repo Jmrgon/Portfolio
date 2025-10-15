@@ -1,6 +1,7 @@
 body {
     margin: auto;
     background-color: #97E4EC;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 header h1 {
@@ -10,7 +11,6 @@ header h1 {
     margin-top: 40px;
     font-size: 60px;
     color: #262833;
-
 }
 
 section.sobre-mi {
@@ -27,7 +27,6 @@ header ul {
     margin: 0;
     padding: 0;
     margin-left: 50px;
-
 }
 
 header h1 button {
@@ -45,8 +44,6 @@ header ul li a {
     font-size: inherit;
     color: inherit;
 }
-
-
 
 .hr {
     border: none;
@@ -74,14 +71,14 @@ footer section {
     background-color: #a8ebef;
     border-radius: 40px;
     padding: 30px 60px;
-    font-family: 'pixelify sans', sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
     color: #202B67;
 }
 
 footer .enlace-footer {
     color: #202B67;
-    font-family: 'pixelify sans', sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
@@ -100,10 +97,12 @@ footer .enlace-footer {
 }
 
 .recuadro-redes h2 {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 1.5rem;
-    color: #2b2b2b;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 3rem;
+    color: #202B67;
     margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .grid-redes {
@@ -149,7 +148,112 @@ footer .enlace-footer {
 }
 
 .red figcaption {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.7rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1rem;
     color: #333;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 30px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 36px;
+        color: #202B67;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+    }
+
+    header ul {
+        display: none;
+        flex-direction: column;
+        background-color: #d0f0f3;
+        border-radius: 15px;
+        position: absolute;
+        top: 80px;
+        right: 30px;
+        width: 180px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: right;
+    }
+
+    header ul.active {
+        display: flex;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+
+    .recuadro-redes {
+        width: 90%;
+        padding: 1.2rem;
+        background-color: none;
+    }
+
+    .recuadro-redes h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .grid-redes {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        background-color: none;
+    }
+
+    .red {
+        max-width: 150px;
+        padding: 0.8rem;
+    }
+
+    .red img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .red figcaption {
+        font-size: 0.8rem;
+    }
+
+
+    .formulario {
+        width: 95%;
+
+        padding: 20px 25px;
+
+        border-radius: 25px;
+    }
+
+    .formulario h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .formulario button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
 }

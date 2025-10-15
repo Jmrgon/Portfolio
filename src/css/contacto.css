@@ -1,33 +1,19 @@
 body {
   margin: auto;
   background-color: #97E4EC;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+header {
+  position: relative;
 }
 
 header h1 {
-  font-family: "Pixelify Sans", sans-serif;
   display: flex;
   margin-left: 60px;
   margin-top: 40px;
   font-size: 60px;
   color: #262833;
-
-}
-
-section.sobre-mi {
-  position: relative;
-  top: -50px;
-}
-
-header ul {
-  list-style-type: none;
-  font-family: "Pixelify Sans", sans-serif;
-  display: flex;
-  font-size: 36px;
-  gap: 85px;
-  margin: 0;
-  padding: 0;
-  margin-left: 50px;
-
 }
 
 header h1 button {
@@ -38,6 +24,16 @@ header h1 button {
   color: inherit;
 }
 
+header ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 36px;
+  gap: 85px;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+}
+
 header ul li a {
   all: unset;
   cursor: pointer;
@@ -45,8 +41,6 @@ header ul li a {
   font-size: inherit;
   color: inherit;
 }
-
-
 
 .hr {
   border: none;
@@ -74,34 +68,29 @@ footer section {
   background-color: #a8ebef;
   border-radius: 40px;
   padding: 30px 60px;
-  font-family: 'pixelify sans', sans-serif;
   font-size: 20px;
   color: #202B67;
 }
 
 footer .enlace-footer {
   color: #202B67;
-  font-family: 'pixelify sans', sans-serif;
   font-size: 20px;
   text-decoration: none;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
 
-
-
 .formulario {
   background-color: #b3ecf0;
   border-radius: 40px;
   width: 600px;
+  max-width: 90%;
   margin: 60px auto;
   padding: 40px 60px;
   text-align: center;
-  font-family: 'Pixelify Sans', sans-serif;
   color: #202B67;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .formulario h2 {
   font-size: 36px;
@@ -111,7 +100,6 @@ footer .enlace-footer {
   color: #202B67;
 }
 
-
 .formulario input,
 .formulario textarea {
   width: 100%;
@@ -120,7 +108,6 @@ footer .enlace-footer {
   border-radius: 20px;
   padding: 18px;
   font-size: 18px;
-  font-family: 'Pixelify Sans', sans-serif;
   color: #202B67;
   margin-bottom: 25px;
   outline: none;
@@ -135,7 +122,6 @@ footer .enlace-footer {
   background-color: #202B67;
   color: #a8ebef;
   font-size: 20px;
-  font-family: 'Pixelify Sans', sans-serif;
   border: none;
   border-radius: 25px;
   padding: 14px 40px;
@@ -146,4 +132,83 @@ footer .enlace-footer {
 .formulario button:hover {
   background-color: #3142a1;
   transform: scale(1.05);
+}
+
+.menu-toggle {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 20px 30px;
+  }
+
+  header h1 {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 36px;
+    color: #202B67;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+
+  header ul {
+    display: none;
+    flex-direction: column;
+    background-color: #d0f0f3;
+    border-radius: 15px;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 180px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+  }
+
+  header ul.active {
+    display: flex;
+  }
+
+  header ul li {
+    margin: 10px 0;
+  }
+
+  
+  .formulario {
+    width: 80%;
+    padding: 25px 30px;
+    border-radius: 25px;
+  }
+
+  .formulario h2 {
+    font-size: 28px;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .formulario button {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  footer section {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 20px 30px;
+  }
 }
