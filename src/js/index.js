@@ -1,6 +1,6 @@
 const toggleBtn = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('header ul');
-const menuHamburguesa = document.querySelector('.menu-hamburguesa');
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navMenu = document.getElementById('nav-menu');
 
 
 document.querySelectorAll('.recuadro').forEach(recuadro => {
@@ -13,23 +13,17 @@ document.getElementById('boton-redes').addEventListener('click', () => {
     window.location.href = 'redes-sociales.html';
 });
 
-document.getElementById('menu-toggle').addEventListener('click', () => {
-    if (menuHamburguesa.style.display === 'none' || elem.style.display === '') {
-        menuHamburguesa.style.display = 'block';
-    } else {
-        menuHamburguesa.style.display = 'none';
-        console.log
-    }
+hamburgerBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
 });
 
 
-
-toggleBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
-
-
-const proyectos = [
+const proyectoss = [
     {
         nombre: "Isekai World",
         descripcion: "Juego estilo isekai con mundos y personajes interactivos.",

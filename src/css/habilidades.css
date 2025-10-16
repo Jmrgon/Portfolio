@@ -142,31 +142,3 @@ footer .enlace-footer {
 }
 
 
-@media (max-width: 768px) {
-  .habilidades {
-    padding: 30px 40px;
-  }
-
-  .habilidades h2 {
-    font-size: 28px;
-  }
-
-  .habilidad {
-    font-size: 16px;
-    padding: 20px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .habilidades {
-    padding: 25px;
-  }
-
-  .habilidades h2 {
-    font-size: 24px;
-  }
-
-  .habilidad {
-    max-width: 100%;
-  }
-}
