@@ -141,4 +141,90 @@ footer .enlace-footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .hr {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .habilidades {
+    width: 90%;
+    padding: 25px 20px;
+    border-radius: 25px;
+  }
+
+  .habilidades h2 {
+    font-size: 28px;
+  }
+
+  .lista-habilidades {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    align-items: center;
+  }
+
+  .habilidad {
+    max-width: 100%;
+    width: 90%;
+    font-size: 16px;
+    padding: 15px 0;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  footer section {
+    display: relative;
+    margin: 10px auto;
+    width: 80%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header ul {
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  .habilidades h2 {
+    font-size: 24px;
+  }
+
+  .habilidad {
+    font-size: 14px;
+  }
+
+  footer section {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
 
